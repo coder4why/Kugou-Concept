@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "recommond-songs-vue": "/components/recommondSongs",
+    "search": "/components/search"
+  }
+}

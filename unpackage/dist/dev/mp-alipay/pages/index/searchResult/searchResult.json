@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "",
+  "pullRefresh": false,
+  "usingComponents": {
+    "recommond-songs-vue": "/components/recommondSongs",
+    "search": "/components/search"
+  }
+}

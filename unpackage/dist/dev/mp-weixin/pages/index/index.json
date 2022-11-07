@@ -1,0 +1,10 @@
+{
+  "navigationBarTextStyle": "black",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "search": "/components/search",
+    "swiper-banner": "/components/swiperBanner",
+    "recommond-songs": "/components/recommondSongs",
+    "float-music-vue": "/components/FloatMusic"
+  }
+}

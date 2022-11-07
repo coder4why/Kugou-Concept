@@ -1,0 +1,185 @@
+
+.discoverText{
+	display: block;
+	width: 45px;
+	height: 40px;
+}
+.nav-right{
+		width: 80px;
+		height: 30px;
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		background-color: #F8F8FF;
+		box-shadow: #DCDCDC 0px 0px 2px;
+		margin-right: 3px;
+
+		image{
+			display: block;
+			height: 14px;
+		}
+		.left{
+			margin-right: 5px;
+		}
+	}
+	.userinfo-view{
+		margin:15px;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 10px;
+		box-shadow: #DCDCDC 0 0 10px;
+		.userinfo-bg{
+			display: block;
+			position: absolute;
+			width: calc(100vw - 30px);
+			height: 100px;
+			border-radius: 10px;
+		}
+		.userinfo-loginBtn{
+			margin-top: 25px;
+			background-color:  white; //#00BFFF;
+			position: absolute;
+			width: 90px;
+			height: 24px;
+			line-height: 24px;
+			border-radius: 12px;
+			font-size: 11px;
+			color: black;
+			font-weight: bold;
+			text-align: center;
+		}
+		.kg-tip{
+			margin-top: 80px;
+			position: absolute;
+			font-size: 11px;
+			transform: scale(0.8);
+			letter-spacing: 4px;
+			color: white;
+			text-align: center;
+		}
+	}
+	.user-profit{
+		margin: 20px 15px;
+		background-color: #F8F8FF;
+		box-shadow: #DCDCDC 0 0 10px;
+		border-radius: 10px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.left,.right{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.left{
+			margin-left: 10px;
+			.profit{
+				width: 15px;
+			}
+			text{
+				font-size: 12px;
+				font-weight: bold;
+				margin: 0 3px;
+			}
+			.svip{
+				height: 12px;
+				margin-top: -8px;
+			}
+		}
+		.right{
+			margin-right: 10px;
+			image{
+				height: 10px;
+			}
+			text{
+				font-size: 13px;
+				color: gray;
+				transform: scale(0.8);
+				font-weight: bold;
+				margin-right: -4px;
+			}
+		}
+}
+
+
+.tabs-view{
+	display: flex;
+	justify-content: center;
+}
+
+/deep/.ir-nav-con{
+	box-shadow: none
+}
+/deep/.ir-nav-con .ir-nav.ir-active .ir-line{
+	width: 14px;
+	height: 4px;
+	border-radius: 2px;
+}
+
+.tab-page{
+	margin: 5px 15px;
+	display: flex;
+}
+.page-music{
+	height: 230px;
+	flex-wrap:wrap;
+	padding: 4px;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.music-view{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: calc(50vw - 27px);
+	margin: 8px 4px;
+	background-color: rgba(245, 245, 245, 0.5);
+	flex-direction: row;
+	box-shadow: #DCDCDC 0px 0px 3px;//将h-shadow,v-shadow设为0px,实现四周阴影
+	border-radius: 10px;
+}
+
+.color-view{
+	width: 80px;
+	height: 80px;
+	margin-left: 6px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 40%;
+	.name{
+		font-weight: bold;
+	}
+	.count{
+		color: lightgray;
+	}
+}
+
+.page-story,.page-channel{
+	justify-content: center;
+	align-items: flex-start;
+	display: flex;
+}
+.page-story{
+	image{
+		width: 60%;
+	}
+}
+.page-channel{
+	margin-top: 20px;
+	image{
+		height: 60px;
+	}
+}

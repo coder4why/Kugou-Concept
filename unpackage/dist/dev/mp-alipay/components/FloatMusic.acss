@@ -1,0 +1,87 @@
+
+.circle-view {
+	position: fixed;
+	bottom: 75px;
+	right: -55px;
+	width: 120px;
+	height: 50px;
+	border-radius: 25px;
+	background-image: linear-gradient(to right,#87CEFA, #00BFFF);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	overflow: hidden;
+	box-shadow: #00BFFF 0 0 5px;
+}
+.isMP{
+	bottom: 75rpx;
+}
+.left {
+	width: 50px;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+	border-radius: 25px;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: absolute;
+	z-index: 10002;
+}
+.right {
+	font-size: 13px;
+	align-self: center;
+	left: 55px;
+	right: 6px;
+	position: absolute;
+	color: white;
+	text-align: left;
+	z-index: 10001;
+	overflow: hidden;
+	word-wrap: unset;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+}
+.cirle-image {
+	display: block;
+	width: 46px;
+	height: 46px;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	border-radius: 23px;
+	-webkit-animation: circleRoate 3s infinite linear;
+	        animation: circleRoate 3s infinite linear;
+}
+@-webkit-keyframes circleRoate {
+from {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+to {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+}
+}
+@keyframes circleRoate {
+from {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+to {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+}
+}
+.active {
+	-webkit-animation-play-state: running;
+	        animation-play-state: running;
+}
+.paused {
+	-webkit-animation-play-state: paused;
+	        animation-play-state: paused;
+}
+

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "vconsole": "^3.14.7"
+  }
+}

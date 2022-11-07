@@ -1,0 +1,1 @@
+<block a:if="{{musicObj.imgUrl}}"><view data-event-opts="{{[['tap',[['playMusic',['$event']]]]]}}" class="{{(('circle-view')+' '+(isMP?'isMP':''))}}" onTap="__e"><view class="left"><image class="{{(('cirle-image')+' '+(!isPlaying?'paused':'active'))}}" src="{{musicObj.imgUrl}}" mode="aspectFit"></image></view></view></block>

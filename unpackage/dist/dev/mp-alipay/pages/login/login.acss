@@ -1,0 +1,143 @@
+.login-page.data-v-b237504c {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.login-bg.data-v-b237504c,
+.login-video.data-v-b237504c {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+}
+.login-bg.data-v-b237504c {
+  background-image: linear-gradient(to bottom, grey, #000000);
+}
+.login-close.data-v-b237504c {
+  z-index: 1001;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  padding: 20px 0px 10px 20px;
+}
+.login-close image.data-v-b237504c {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0px;
+}
+.login-center.data-v-b237504c {
+  margin: 0px 20px;
+  z-index: 1001;
+}
+.login-mobile-text.data-v-b237504c {
+  font-size: 25px;
+  font-weight: bold;
+  height: 40px;
+}
+.login-mobile-area.data-v-b237504c {
+  margin-top: 30px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+.login-mobile-number.data-v-b237504c {
+  height: 30px;
+  flex-direction: row;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.login-mobile-number .areaCode.data-v-b237504c {
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.login-mobile-number .mobile-input.data-v-b237504c {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+.login-btn.data-v-b237504c {
+  width: calc(100vw - 40px);
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 55px;
+  background-image: linear-gradient(to right, #87CEFA, #00BFFF);
+}
+.account-login-btn.data-v-b237504c {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.login-otherStyle.data-v-b237504c {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: calc(100vw - 40px);
+  position: absolute;
+  bottom: 140px;
+}
+.login-otherStyle .white-line.data-v-b237504c {
+  display: flex;
+  height: 0.5px;
+  width: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.login-otherStyle .other-style.data-v-b237504c {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin: 0 15px;
+}
+.login-styles.data-v-b237504c {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 40px;
+  width: calc(100vw - 120px);
+  height: 50px;
+}
+.login-styles image.data-v-b237504c {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.login-protocal.data-v-b237504c {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 25px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+.login-protocal .checkBox.data-v-b237504c {
+  background-color: transparent;
+  border-radius: 2px;
+  border-color: white;
+  -webkit-transform: scale(0.55);
+          transform: scale(0.55);
+}
+.login-protocal input[type=checkbox].data-v-b237504c,
+.login-protocal input[type=checkbox].data-v-b237504c:checked::after,
+.login-protocal input[type=checkbox].data-v-b237504c::after {
+  background-color: transparent;
+  color: transparent;
+}
+

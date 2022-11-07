@@ -1,0 +1,60 @@
+.ad-bg.data-v-7d918566 {
+  z-index: 10;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.ad-bg image.data-v-7d918566 {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.app-logo.data-v-7d918566 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.app-logo .kg-slogan.data-v-7d918566 {
+  width: 180px;
+  height: 180px;
+  margin-top: -250px;
+  display: block;
+  z-index: 1003;
+}
+.app-logo .kg-logo.data-v-7d918566 {
+  width: 80px;
+  bottom: 80px;
+  display: block;
+  position: absolute;
+  z-index: 1002;
+}
+.ad-content.data-v-7d918566 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ad-times.data-v-7d918566 {
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  width: 44px;
+  height: 25px;
+  border-radius: 12.5px;
+  line-height: 25px;
+  border: 0.5px white solid;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ad-image.data-v-7d918566 {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+

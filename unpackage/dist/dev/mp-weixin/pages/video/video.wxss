@@ -1,0 +1,24 @@
+.main.data-v-3ec61a7e {
+  text-align: center;
+  font-size: 25px;
+  color: orangered;
+}
+.discoverText.data-v-3ec61a7e {
+  display: block;
+  width: 45px;
+  height: 40px;
+}
+.main.data-v-3ec61a7e {
+  text-align: center;
+  font-size: 25px;
+  color: orangered;
+}
+.bank-text.data-v-3ec61a7e {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 15px;
+  text-align: left;
+  color: black;
+}
+

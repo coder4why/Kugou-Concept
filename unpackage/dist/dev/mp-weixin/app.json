@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/ad/ad",
+    "pages/index/index",
+    "pages/video/video",
+    "pages/mine/mine",
+    "pages/play/play",
+    "pages/login/login",
+    "pages/video/videoDetail/videoDetail",
+    "pages/index/searchResult/searchResult",
+    "pages/mvPlay/mvPlay",
+    "pages/singerInfo/singerInfo",
+    "pages/index/moreMusic/moreMusic"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "酷狗音乐概念版",
+    "navigationBarBackgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "black",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "iconfontSrc": "static/iconfont/iconfont.ttf",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "static/images/tabs/tab-home.png",
+        "selectedIconPath": "static/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "推荐",
+        "iconPath": "static/images/tabs/tab-cate.png",
+        "selectedIconPath": "static/images/tabs/tab-cate-current.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/images/tabs/tab-my.png",
+        "selectedIconPath": "static/images/tabs/tab-my-current.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,11 @@
+{
+  "defaultTitle": "",
+  "pullRefresh": false,
+  "usingComponents": {
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "u-nav-bar": "/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar",
+    "ir-tabs-vue": "/components/ir-tabs/ir-tabs",
+    "u-ni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "float-music-vue": "/components/FloatMusic"
+  }
+}

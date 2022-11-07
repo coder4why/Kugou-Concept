@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/ad/ad",
+    "pages/index/index",
+    "pages/video/video",
+    "pages/mine/mine",
+    "pages/play/play",
+    "pages/login/login",
+    "pages/video/videoDetail/videoDetail",
+    "pages/index/searchResult/searchResult",
+    "pages/mvPlay/mvPlay",
+    "pages/singerInfo/singerInfo",
+    "pages/index/moreMusic/moreMusic"
+  ],
+  "subPackages": [],
+  "window": {
+    "defaultTitle": "酷狗音乐概念版",
+    "titleBarColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "textColor": "#7A7E83",
+    "selectedColor": "black",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "发现",
+        "icon": "static/images/tabs/tab-home.png",
+        "activeIcon": "static/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "name": "推荐",
+        "icon": "static/images/tabs/tab-cate.png",
+        "activeIcon": "static/images/tabs/tab-cate-current.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "name": "我的",
+        "icon": "static/images/tabs/tab-my.png",
+        "activeIcon": "static/images/tabs/tab-my-current.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "plugin-wrapper": "/plugin-wrapper"
+  }
+}
