@@ -141,27 +141,64 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _muiscTool = __webpack_require__(/*! ../../utils/muiscTool */ 58); //
-//
-//
-//
-//
-//
-//
-//
-var _default = { data: function data() {return { url: "", isH5: false };}, onLoad: function onLoad(obj) {
 
 
 
-    console.log(obj.url);
+
+var _api = __webpack_require__(/*! ../../utils/api */ 28);
+
+
+var _muiscTool = __webpack_require__(/*! ../../utils/muiscTool */ 58);var recommondSongsVue = function recommondSongsVue() {Promise.all(/*! require.ensure | components/recommondSongs */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/recommondSongs")]).then((function () {return resolve(__webpack_require__(/*! ../../components/recommondSongs.vue */ 123));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+{
+  components: {
+    recommondSongsVue: recommondSongsVue },
+
+  data: function data() {
+    return {
+      url: "",
+      isH5: false,
+      similarMvs: [] };
+
+  },
+  onLoad: function onLoad(obj) {var _this = this;
+
+
+
     this.$store.commit('setMusicStatus', false);
     (0, _muiscTool.pauseMusic)();
     this.url = obj.url;
     uni.setNavigationBarTitle({
       title: obj.title });
 
-  },
-  methods: {} };exports.default = _default;
+
+    uni.showLoading();
+    (0, _api.apiSearchMusic_MediaVideo)(obj.singername, 15).then(function (res) {
+      uni.hideLoading();
+      var result = res.data.info;
+      result.map(function (sItem, index) {
+        sItem.imgurl = sItem.imgurl || sItem.topic_url ||
+        'http://imge.kugou.com/stdmusic/250/20220930/20220930145957746541.jpg';
+        if (sItem.imgurl && sItem.imgurl.indexOf('{size}') != -1) {
+          sItem.imgurl = sItem.imgurl.replace('{size}', '150');
+        }
+        if (sItem.songname && sItem.songname.indexOf('em>') != -1) {
+          sItem.songname = sItem.songname.replace(/<em>/g, "").replace(
+          /<\/em>/g, "");
+        }
+        sItem.specialname = (sItem.
+        songname || sItem.specialname || sItem.albumname || sItem.filename || '佚名').
+        replace(/<em>/g, "").
+        replace(
+        /<\/em>/g, "");
+        sItem.username = (sItem.singername || sItem.nickname).replace(/<em>/g,
+        "").replace(
+        /<\/em>/g, "");
+      });
+      _this.similarMvs = result;
+    });
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

@@ -1,9 +1,0 @@
-{
-  "defaultTitle": "",
-  "pullRefresh": false,
-  "usingComponents": {
-    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
-    "recommond-songs-vue": "/components/recommondSongs",
-    "u-ni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons"
-  }
-}

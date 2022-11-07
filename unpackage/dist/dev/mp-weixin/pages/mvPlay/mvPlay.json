@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
-  "disableScroll": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "recommond-songs-vue": "/components/recommondSongs"
+  }
 }

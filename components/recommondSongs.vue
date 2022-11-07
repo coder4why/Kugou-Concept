@@ -80,17 +80,34 @@ import { isNull } from '../utils/global';
 					}
 				});
 			},
+			
+			isVideoPage(){
+				let curPage = getCurrentPages();
+				let route = curPage[curPage.length - 1].route;
+				return (route == 'pages/mvPlay/mvPlay');
+			},
+			
 			playVideo(item) {
-				console.log(item);
+				console.log(JSON.stringify(item));
 				uni.showLoading();
 				apiGetMvDetail(item.mvhash || item.hash).then(res => {
 					uni.hideLoading();
 					if (res.statusCode == 200 && res.data.mvdata && res.data.mvdata.sq.downurl && res.data.mvdata
 						.sq.downurl.length > 0) {
-						uni.navigateTo({
-							url: '/pages/mvPlay/mvPlay?url=' + res.data.mvdata.sq.downurl + "&title=" +
-								item.specialname
-						})
+							
+							if(this.isVideoPage()){
+								//销毁当前页面，定向到新页面
+								uni.redirectTo({
+									url: '/pages/mvPlay/mvPlay?url=' + res.data.mvdata.sq.downurl + "&title=" + 
+										item.specialname + '&singername=' + item.singername || item.username || item.specialname
+								})
+							}else{
+								//保留当前页面，跳转新页面
+								uni.navigateTo({
+									url: '/pages/mvPlay/mvPlay?url=' + res.data.mvdata.sq.downurl + "&title=" +
+										item.specialname + '&singername=' + item.singername || item.username || item.specialname
+								})
+							}
 					} else {
 						uni.showToast({
 							title: "暂无权限"

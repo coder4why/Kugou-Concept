@@ -1,11 +1,15 @@
 .mv-page.data-v-80bab1b4 {
-  background-color: black;
+  background-color: white;
+  padding-bottom: 10px;
 }
 .mv-video.data-v-80bab1b4 {
   width: 100vw;
-  height: 100vh;
+  height: 240px;
 }
-.h5-video.data-v-80bab1b4 {
-  height: calc(100vh - 44px);
+.recommend-mv.data-v-80bab1b4 {
+  margin: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 0.5px solid lightgray;
 }
 
