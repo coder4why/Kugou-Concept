@@ -29,6 +29,7 @@
 			}
 		},
 		onLoad(obj) {
+			console.log('2222',JSON.stringify(obj));
 			// #ifdef APP-PLUS || H5
 			this.isH5 = true;
 			// #endif

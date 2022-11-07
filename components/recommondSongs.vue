@@ -88,7 +88,7 @@ import { isNull } from '../utils/global';
 			},
 			
 			playVideo(item) {
-				console.log(JSON.stringify(item));
+				console.log('111:',JSON.stringify(item));
 				uni.showLoading();
 				apiGetMvDetail(item.mvhash || item.hash).then(res => {
 					uni.hideLoading();
@@ -99,13 +99,13 @@ import { isNull } from '../utils/global';
 								//销毁当前页面，定向到新页面
 								uni.redirectTo({
 									url: '/pages/mvPlay/mvPlay?url=' + res.data.mvdata.sq.downurl + "&title=" + 
-										item.specialname + '&singername=' + item.singername || item.username || item.specialname
+										item.specialname + '&singername=' + (item.singername || item.username || item.specialname)
 								})
 							}else{
 								//保留当前页面，跳转新页面
 								uni.navigateTo({
 									url: '/pages/mvPlay/mvPlay?url=' + res.data.mvdata.sq.downurl + "&title=" +
-										item.specialname + '&singername=' + item.singername || item.username || item.specialname
+										item.specialname + '&singername=' + (item.singername || item.username || item.specialname)
 								})
 							}
 					} else {

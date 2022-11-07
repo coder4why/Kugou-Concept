@@ -163,6 +163,7 @@ var _muiscTool = __webpack_require__(/*! ../../utils/muiscTool */ 58);var recomm
 
   },
   onLoad: function onLoad(obj) {var _this = this;
+    console.log('2222', JSON.stringify(obj));
 
 
 

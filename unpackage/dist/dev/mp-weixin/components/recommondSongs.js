@@ -228,7 +228,7 @@ var _default = { name: "recommondSongs", props: { songs: { default: [], type: Ar
     },
 
     playVideo: function playVideo(item) {var _this2 = this;
-      console.log(JSON.stringify(item));
+      console.log('111:', JSON.stringify(item));
       uni.showLoading();
       (0, _api.apiGetMvDetail)(item.mvhash || item.hash).then(function (res) {
         uni.hideLoading();
@@ -239,13 +239,13 @@ var _default = { name: "recommondSongs", props: { songs: { default: [], type: Ar
             //销毁当前页面，定向到新页面
             uni.redirectTo({
               url: '/pages/mvPlay/mvPlay?url=' + res.data.mvdata.sq.downurl + "&title=" +
-              item.specialname + '&singername=' + item.singername || false || false });
+              item.specialname + '&singername=' + (item.singername || item.username || item.specialname) });
 
           } else {
             //保留当前页面，跳转新页面
             uni.navigateTo({
               url: '/pages/mvPlay/mvPlay?url=' + res.data.mvdata.sq.downurl + "&title=" +
-              item.specialname + '&singername=' + item.singername || false || false });
+              item.specialname + '&singername=' + (item.singername || item.username || item.specialname) });
 
           }
         } else {
