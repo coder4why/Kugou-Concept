@@ -3,7 +3,8 @@
 		<search isDetail :value="searchText" @search="searchAny"></search>
 		<view v-for="(item,index) in results" :key="index" v-if="item.songs.length>0">
 			<view class="title">{{item.title}}</view>
-			<recommond-songs-vue  :isVideo='index==1' showVideo class='result-view' :songs="item.songs"></recommond-songs-vue>
+			<recommond-songs-vue :isVideo='index==1' showVideo class='result-view' :songs="item.songs">
+			</recommond-songs-vue>
 			<view class="showMore" @click="showMore(index)">查看更多“{{searchText}}”{{item.title}}</view>
 		</view>
 	</view>
@@ -43,9 +44,15 @@
 				this.searchText = obj.detail.value;
 				this.searchWord();
 			},
-			showMore(index){
+			showMore(index) {
+				if (index == 0) {
+					uni.navigateTo({
+						url:'/pages/video/videoDetail/videoDetail?keyword='+this.searchText
+					});
+					return;
+				}
 				uni.showToast({
-					title:'没有更多了...'
+					title: '没有更多了...'
 				});
 			},
 			searchWord() {
@@ -77,7 +84,8 @@
 									/<\/em>/g, "");
 							}
 							sItem.specialname = (sItem
-									.songname || sItem.specialname ||sItem.albumname || sItem.filename || '佚名').replace(/<em>/g, "")
+									.songname || sItem.specialname || sItem.albumname || sItem
+									.filename || '佚名').replace(/<em>/g, "")
 								.replace(
 									/<\/em>/g, "");
 							sItem.username = (sItem.singername || sItem.nickname).replace(/<em>/g,

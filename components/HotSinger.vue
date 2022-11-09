@@ -4,7 +4,6 @@
 		<view class="singer-list">
 			<view class="singer-item" v-for="(item,index) in singers" :key="index" @click="$emit('showMore',item)">
 				<image class="singer-img" :src="item.imgurl" mode="aspectFill"></image>
-				<!-- <view class="singer-blur"></view> -->
 			</view>
 		</view>
 	</view>
@@ -36,25 +35,25 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin: 0 30rpx;
+		margin: 0 10rpx;
 		min-height: 200px;
 		align-items: center;
 		justify-content: space-around;
 	}
 
 	.singer-item {
-		width: 25vw;
-		height: 25vw;
-		border-radius: 20px;
-		margin-top: 30rpx;
+		width: 22vw;
+		height: 22vw;
+		border-radius: 10px;
+		margin-top: 15rpx;
 	}
 
 	.singer-img {
 		position: absolute;
 		display: block;
-		width: 25vw;
-		height: 25vw;
-		border-radius: 20px;
+		width: 22vw;
+		height: 22vw;
+		border-radius: 10px;
 	}
 	
 </style>

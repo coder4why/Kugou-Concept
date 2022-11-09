@@ -57,7 +57,7 @@ import { isNull } from '../utils/global';
 					this.playVideo(obj);
 					return;
 				}
-				console.log('播放音频');
+				console.log('播放音频',JSON.stringify(obj));
 				uni.showLoading();
 				apiGetMp3Url(obj.hash).then((res) => {
 					uni.hideLoading();

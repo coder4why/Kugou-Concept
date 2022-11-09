@@ -29,7 +29,7 @@ export const API = {
 
 	//获取热门歌手列表：
 	"HotSingerList": Base_Url +
-		"/v5/singer/list?version=9108&showtype=1&plat=0&sextype=0&sort=1&pagesize=6&type=0&page=1&musician=0",
+		"/v5/singer/list?version=9108&showtype=1&plat=0&sextype=0&sort=1&pagesize=8&type=0&page=1&musician=0",
 
 	//根据歌手singerid查询歌手信息：
 	"HotSingerInfo": Base_Url + "/v3/singer/info?singerid={singerid}&with_res_tag=1",
