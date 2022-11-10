@@ -199,30 +199,30 @@ var _default =
     },
     login: function login() {
       uni.switchTab({
-        url: '/pages/index/index' });
+        url: "/pages/mine/mine" });
 
     },
     wxlogin: function wxlogin() {
       /* 小程序秘钥： 97da1396cf3fe7b663634ebb61d87750 */
-      uni.getProvider({
-        service: 'oauth',
-        success: function success(res) {
-          console.log('权限成功1', res);
-          if (~res.provider.indexOf('weixin')) {
-            uni.getUserInfo({
-              provider: 'weixin',
-              success: function success(infoRes) {
-                console.log('用户信息：', infoRes.userInfo);
-              },
-              fail: function fail(error) {
-                console.log('登录失败', error);
-              } });
 
-          }
+      uni.getUserProfile({
+        desc: '用于登录',
+        success: function success(res) {
+          console.log('成功', JSON.stringify(res));
+          uni.showToast({
+            title: res.userInfo.nickName,
+            duration: 2000 });
+
+          setTimeout(function () {
+            uni.switchTab({
+              url: "/pages/mine/mine" });
+
+          }, 2000);
         },
         fail: function fail(error) {
           console.log(error);
         } });
+
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

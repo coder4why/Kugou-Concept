@@ -3371,7 +3371,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 10);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".singer-title[data-v-2ebb2244] {\n  font-size: 16px;\n  font-weight: bold;\n  margin-left: 15px;\n  text-align: left;\n  color: black;\n}\n.singer-list[data-v-2ebb2244] {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  margin: 0 30rpx;\n  min-height: 200px;\n  align-items: center;\n  justify-content: space-around;\n}\n.singer-item[data-v-2ebb2244] {\n  width: 25vw;\n  height: 25vw;\n  border-radius: 20px;\n  margin-top: 30rpx;\n}\n.singer-img[data-v-2ebb2244] {\n  position: absolute;\n  display: block;\n  width: 25vw;\n  height: 25vw;\n  border-radius: 20px;\n}\n", ""]);
+exports.push([module.i, ".singer-title[data-v-2ebb2244] {\n  font-size: 16px;\n  font-weight: bold;\n  margin-left: 15px;\n  text-align: left;\n  color: black;\n}\n.singer-list[data-v-2ebb2244] {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  margin: 0 10rpx;\n  min-height: 200px;\n  align-items: center;\n  justify-content: space-around;\n}\n.singer-item[data-v-2ebb2244] {\n  width: 22vw;\n  height: 22vw;\n  border-radius: 10px;\n  margin-top: 15rpx;\n}\n.singer-img[data-v-2ebb2244] {\n  position: absolute;\n  display: block;\n  width: 22vw;\n  height: 22vw;\n  border-radius: 10px;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -5069,28 +5069,30 @@ var render = function() {
     "uni-view",
     { attrs: { _i: 0 } },
     [
-      _c(
-        "uni-view",
-        { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } },
-        [
-          _c(
+      _vm._$g(1, "i")
+        ? _c(
             "uni-view",
-            { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
+            { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } },
             [
-              _c("uni-icons", { attrs: { _i: 3 } }),
-              _c("v-uni-text", { attrs: { _i: 4 } }, [_vm._v("播放全部")])
+              _c(
+                "uni-view",
+                { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
+                [
+                  _c("uni-icons", { attrs: { _i: 3 } }),
+                  _c("v-uni-text", { attrs: { _i: 4 } }, [_vm._v("播放全部")])
+                ],
+                1
+              ),
+              _c(
+                "uni-view",
+                { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } },
+                [_c("uni-icons", { attrs: { _i: 6 } })],
+                1
+              )
             ],
             1
-          ),
-          _c(
-            "uni-view",
-            { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } },
-            [_c("uni-icons", { attrs: { _i: 6 } })],
-            1
           )
-        ],
-        1
-      ),
+        : _vm._e(),
       _c("recommond-songs-vue", { attrs: { _i: 7 } })
     ],
     1

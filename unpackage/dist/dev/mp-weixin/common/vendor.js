@@ -2538,7 +2538,7 @@ uni$1;exports.default = _default;
 
 /***/ }),
 
-/***/ 108:
+/***/ 109:
 /*!*******************************************************************************************************************!*\
   !*** /Users/hupingkang/Desktop/uniapp_miniwx/uni_modules/mescroll-uni/components/mescroll-uni/mescroll-mixins.js ***!
   \*******************************************************************************************************************/
@@ -2780,7 +2780,7 @@ store;exports.default = _default;
 
 /***/ }),
 
-/***/ 126:
+/***/ 127:
 /*!******************************************************************************!*\
   !*** /Users/hupingkang/Desktop/uniapp_miniwx/static/images/global/video.png ***!
   \******************************************************************************/
@@ -2791,7 +2791,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACq
 
 /***/ }),
 
-/***/ 127:
+/***/ 128:
 /*!*****************************************************************************!*\
   !*** /Users/hupingkang/Desktop/uniapp_miniwx/static/images/global/next.png ***!
   \*****************************************************************************/
@@ -4056,21 +4056,6 @@ var index_cjs = {
 module.exports = index_cjs;
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../webpack/buildin/global.js */ 2)))
-
-/***/ }),
-
-/***/ 130:
-/*!***************************************************************!*\
-  !*** /Users/hupingkang/Desktop/uniapp_miniwx/utils/global.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.isNull = isNull;function isNull(string) {
-  return string == null || string == 'null' || string == '' || string == undefined || string ==
-  'undefined';
-}
 
 /***/ }),
 
@@ -6443,7 +6428,7 @@ var API = {
 
   //获取热门歌手列表：
   "HotSingerList": Base_Url +
-  "/v5/singer/list?version=9108&showtype=1&plat=0&sextype=0&sort=1&pagesize=6&type=0&page=1&musician=0",
+  "/v5/singer/list?version=9108&showtype=1&plat=0&sextype=0&sort=1&pagesize=8&type=0&page=1&musician=0",
 
   //根据歌手singerid查询歌手信息：
   "HotSingerInfo": Base_Url + "/v3/singer/info?singerid={singerid}&with_res_tag=1",
@@ -13881,6 +13866,21 @@ function resumePlay() {
 /***/ (function(module, exports) {
 
 module.exports = "/static/images/login/login_bg.mp4";
+
+/***/ }),
+
+/***/ 76:
+/*!***************************************************************!*\
+  !*** /Users/hupingkang/Desktop/uniapp_miniwx/utils/global.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.isNull = isNull;function isNull(string) {
+  return string == null || string == 'null' || string == '' || string == undefined || string ==
+  'undefined';
+}
 
 /***/ })
 

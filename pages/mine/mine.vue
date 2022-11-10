@@ -74,6 +74,7 @@
 	import uNavBar from '@/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar.vue'
 	import FloatMusicVue from '../../components/FloatMusic.vue';
 	import irTabsVue from '../../components/ir-tabs/ir-tabs.vue';
+	
 	export default {
 		components: {
 			uNavBar,
@@ -112,6 +113,25 @@
 				],
 				tabIndex: 0
 			}
+		},
+		onLoad() {
+			uni.getLocation({
+				isHighAccuracy: true,
+				success: (res) => {
+					console.log(res);
+					// uni.chooseLocation({
+					// 	latitude:res.latitude,
+					// 	longitude:res.longitude,
+					// 	scale:5,
+					// 	complete: (res) => {
+					// 		console.log(res);
+					// 	}
+					// })
+				},
+				fail: (error) => {
+					console.log(error);
+				}
+			});
 		},
 		methods: {
 			toLogin() {

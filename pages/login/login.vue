@@ -56,31 +56,31 @@
 			},
 			login() {
 				uni.switchTab({
-					url: '/pages/index/index'
+					url: "/pages/mine/mine"
 				})
 			},
 			wxlogin() {
 				/* 小程序秘钥： 97da1396cf3fe7b663634ebb61d87750 */
-				uni.getProvider({
-					service: 'oauth',
+				// #ifdef MP
+				uni.getUserProfile({
+					desc: '用于登录',
 					success: (res) => {
-						console.log('权限成功1', res);
-						if (~res.provider.indexOf('weixin')) {
-							uni.getUserInfo({
-								provider: 'weixin',
-								success: (infoRes) => {
-									console.log('用户信息：',infoRes.userInfo);
-								},
-								fail: (error) => {
-									console.log('登录失败', error);
-								}
+						console.log('成功', JSON.stringify(res));
+						uni.showToast({
+							title: res.userInfo.nickName,
+							duration: 2000
+						})
+						setTimeout(() => {
+							uni.switchTab({
+								url: "/pages/mine/mine"
 							})
-						}
+						}, 2000)
 					},
 					fail: (error) => {
 						console.log(error);
 					}
-				});
+				})
+				// #endif
 			}
 		}
 	}

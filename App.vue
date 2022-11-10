@@ -35,6 +35,5 @@
 
 	::v-deep .uni-navbar--border {
 		border-bottom-style: none !important;
-		;
 	}
 </style>

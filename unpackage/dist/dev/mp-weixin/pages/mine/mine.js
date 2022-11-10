@@ -236,6 +236,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 {
   components: {
     uNavBar: uNavBar,
@@ -273,6 +274,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
       tabIndex: 0 };
+
+  },
+  onLoad: function onLoad() {
+    uni.getLocation({
+      isHighAccuracy: true,
+      success: function success(res) {
+        console.log(res);
+        // uni.chooseLocation({
+        // 	latitude:res.latitude,
+        // 	longitude:res.longitude,
+        // 	scale:5,
+        // 	complete: (res) => {
+        // 		console.log(res);
+        // 	}
+        // })
+      },
+      fail: function fail(error) {
+        console.log(error);
+      } });
 
   },
   methods: {
