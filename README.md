@@ -18,8 +18,4 @@
 <img src="static/images/pics/10.png" width="215" height="427"/>
 <img src="static/images/pics/11.png" width="215" height="427"/>
 
-<img src="static/images/pics/12.png" width="215" height="427"/>
-<img src="static/images/pics/13.png" width="215" height="427"/>
-<img src="static/images/pics/14.png" width="215" height="427"/>
-
 </h2>
