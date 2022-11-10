@@ -1,6 +1,5 @@
 # Kugou-Concept
 酷狗音乐概念版：Uniapp（微信小程序 && H5）
-##  UniApp : 酷狗音乐概念版 
 ### H5：
 <h2 align"center">
 
