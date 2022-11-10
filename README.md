@@ -1,6 +1,5 @@
 # Kugou-Concept
 酷狗音乐概念版：Uniapp（微信小程序 && H5）
-### H5：
 <h2 align"center">
 
 <img src="static/images/pics/0.png" width="215" height="427"/>
