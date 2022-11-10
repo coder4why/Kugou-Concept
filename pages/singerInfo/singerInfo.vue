@@ -121,8 +121,8 @@ import { apiGetHotSingerSongs,apiGetHotSingerInfo ,apiGetMp3Url,apiGetMvDetail} 
 .songs-view{
 	margin: 15px;
 	.song-item{
-		height: 100rpx;
-		line-height: 100rpx;
+		height: 50px;
+		line-height: 50px;
 		border-bottom: 0.5px solid lightgray;
 		display: flex;
 		flex-direction: row;
@@ -132,7 +132,7 @@ import { apiGetHotSingerSongs,apiGetHotSingerInfo ,apiGetMp3Url,apiGetMvDetail} 
 			font-size: 14px;
 			font-weight: bold;
 			text-overflow: ellipsis;
-			line-height: 100rpx;
+			line-height: 50px;
 			white-space: nowrap;
 			overflow: hidden;
 			min-width: 75%;
